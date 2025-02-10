@@ -2,7 +2,7 @@
 
 A simple command-line task manager to keep track of your to-dos! This tool allows you to add, remove, sort, and update the status of tasks directly from your terminal. 🚀
 
-*(Yes, I know "Tasker" is the correct spelling, but I made a mistake on purpose—because creativity matters!)* 😎
+*(Yes, I know "Tasker" is the correct spelling, but I made a mistake on purpose — because creativity matters!)* 😎
 
 ## 📌 Features
 
@@ -31,31 +31,31 @@ Run the script with different commands to manage your tasks.
 ### 🏷️ List all tasks
 
 ```sh
-$ python takser.py
+$ takser
 ```
 
 ### ➕ Add new tasks
 
 ```sh
-$ python takser.py add "Buy groceries" "Finish project"
+$ takser add "Buy groceries" "Finish project"
 ```
 
 ### ❌ Remove tasks by ID
 
 ```sh
-$ python takser.py remove 1 3
+$ takser remove 1 3
 ```
 
 ### ✅ Mark tasks as done
 
 ```sh
-$ python takser.py done 2
+$ takser done 2
 ```
 
 ### ⏳ Mark tasks as in progress
 
 ```sh
-$ python takser.py in progress 4
+$ takser in progress 4
 ```
 
 ### 🔀 Sort tasks
@@ -63,19 +63,19 @@ $ python takser.py in progress 4
 Sort by ID:
 
 ```sh
-$ python takser.py sort id
+$ takser sort id
 ```
 
 Sort by text:
 
 ```sh
-$ python takser.py sort text
+$ takser sort text
 ```
 
 Sort by status:
 
 ```sh
-$ python takser.py sort status
+$ takser sort status
 ```
 
 ## ⚙️ How It Works
