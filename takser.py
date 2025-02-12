@@ -103,6 +103,8 @@ def main():
                 task["status"] = "in progress"  # Mark tasks as in progress
 
         save_tasks(tasks)
+    elif sys.argv[1] in ("raw", "r"):
+        print(json.dumps(tasks, indent=4))  # Print raw JSON representation of tasks
 
 if __name__ == "__main__":
     main()
