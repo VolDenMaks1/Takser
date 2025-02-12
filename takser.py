@@ -11,27 +11,27 @@ TASKS_FILE = os.path.join(CACHE_DIR, "tasks.json")
 os.makedirs(CACHE_DIR, exist_ok=True)
 
 def load_tasks():
-    """Load tasks from the file if it exists, otherwise return an empty list"""
+    #Load tasks from the file if it exists, otherwise return an empty list
     if os.path.exists(TASKS_FILE):
         with open(TASKS_FILE, "r", encoding="utf-8") as file:
             return json.load(file)
     return []
 
 def save_tasks(tasks):
-    """Save tasks to the file in JSON format"""
+    #Save tasks to the file in JSON format
     with open(TASKS_FILE, "w", encoding="utf-8") as file:
         json.dump(tasks, file, indent=4)
 
 def strikethrough(text):
-    """Format text with strikethrough using ANSI escape codes"""
+    #Format text with strikethrough using ANSI escape codes
     return f"\033[9m{text}\033[0m"
 
 def bold(text):
-    """Format text in bold using ANSI escape codes"""
+    #Format text in bold using ANSI escape codes
     return f"\033[1m{text}\033[0m"
 
 def list_tasks(tasks):
-    """Display the list of tasks formatted based on their status"""
+    #Display the list of tasks formatted based on their status
     if not tasks:
         return
 
@@ -49,7 +49,7 @@ def list_tasks(tasks):
         print(f"[{task_id}] {task_text}")
 
 def main():
-    """Main function to handle task management commands"""
+    #Main function to handle task management commands
     tasks = load_tasks()
 
     if len(sys.argv) <= 1:
