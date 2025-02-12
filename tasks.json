@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "text": "Complete project documentation",
+        "status": 0
+    },
+    {
+        "id": 2,
+        "text": "Implement user authentication",
+        "status": 1
+    },
+    {
+        "id": 3,
+        "text": "Fix bugs in the payment module",
+        "status": 2
+    }
+]
